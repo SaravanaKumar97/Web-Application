@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>
+Carrom Board
+</title>
+<style>
+body{
+  background-color:brown;
+}
+.border{
+  background-color:white;
+  color: red;
+  border: 20px solid black;
+  position:absolute;
+  top:50%; left:50%;
+  transform:translate(-50%,-50%);
+  width: 480px;
+  height: 350px;
+  border-radius: 2%;
+}
+
+.pocket{
+  border: 1px solid black;
+  width: 38px;  height: 38px;
+  border-radius: 50%;
+  position:absolute;
+}
+
+.p1{
+  left:0px;
+  top:0px;
+  background-color:black;
+}
+.p2{
+  background-color:black;
+  right:0px;
+  top:0px;
+}
+.p3{
+  background-color:black;
+  left:0px;
+  bottom:0px;
+}
+.p4{
+  background-color:black;
+  right:0px;
+  bottom:0px;
+}
+.base{
+  position: absolute;
+  width:275px; height:19px;
+}
+.b1{
+border: 1px solid black;
+top: 17%;  left: 21%;
+}
+.b2{
+border: 1px solid black;
+bottom: 17%;  left: 21%;
+}
+.b3{
+border: 1px solid black;
+top: 22%;  left: 17%;
+width:18px; height:190px;
+}
+.b4{
+border: 1px solid black;
+top: 22%;  right: 17%;
+width:18px; height:190px;
+}
+.red{
+  border: 1px solid black;
+  width: 14px;  height: 17px;
+  border-radius: 50%;
+  position:absolute;
+  background-color:red;
+}
+.r11, .r22{
+  position:absolute;
+  right:0px;
+}
+
+.r33, .r44{
+  position:absolute;
+  bottom:0px;
+  position:absolute;
+}
+
+.arrow{
+  border: 1px solid black;
+  width: 80px;
+  transform: rotate(45deg);
+  transform-origin: -35px 140px;
+}
+
+.a2{
+    border: 1px solid black;
+  width: 80px;
+  transform: rotate(135deg);
+  transform-origin: 185px 113px;
+}
+.a3{
+  border: 1px solid black;
+  width: 80px;
+  transform: rotate(45deg);
+  transform-origin: -98px 520px;
+}
+.a4{
+    border: 1px solid black;
+  width: 80px;
+  transform: rotate(135deg);
+  transform-origin: 32px 140px;
+}
+
+#center{
+  background-color:white;
+  border: 1px solid black;
+  position:absolute;
+  top:50%; left:50%;
+  transform:translate(-50%,-50%);
+  width: 68px;
+  height: 55px;
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+<div class="border">
+	<div class="pocket p1"></div>
+	<div class="pocket p2"></div>
+	<div class="pocket p3"></div>
+	<div class="pocket p4"></div>
+		
+	<div class="base b1">
+	<div class="red r1"></div>
+	<div class="red r11"></div></div>
+	<div class="base b2">
+	<div class="red r2"></div>
+	<div class="red r22"></div></div>
+	<div class="base b3">
+	<div class="red r3"></div>
+	<div class="red r33"></div></div>
+	<div class="base b4">
+	<div class="red r4"></div>
+	<div class="red r44"></div></div>
+	
+	<div class="arrow a1"></div>
+	<div class="arrow a2"></div>
+	<div class="arrow a3"></div>
+	<div class="arrow a4"></div>
+
+	<div id="center"></div>
+</div>
+</body>
+</html>
